@@ -1429,8 +1429,21 @@ html[data-theme="dark"] #st-powered-by {
   color: var(--st-text, #1A1A2E);
 }
 
-/* ── MISC UI POLISH ─────────────────────────────────────────────────────────── */
-
+/* Link-field dropdown (awesomplete) must paint above the DataTable's sticky
+   checkbox column. Frappe core (.awesomplete > [role="listbox"]) and the
+   bundled frappe-datatable library's sticky top-left corner cell
+   (.dt-cell--sticky-top, the "select all" checkbox) both independently use
+   z-index: 4 — an exact tie. On any report where a Link filter sits directly
+   above the grid (e.g. the Bull filter on Bull Performance Report), the
+   dropdown's on-screen position overlaps that sticky cell, and with a tied
+   z-index the browser falls back to DOM order, so the checkbox bleeds
+   through the dropdown inconsistently. 20 is chosen to sit comfortably above
+   frappe-datatable's own highest z-index (.dt-dropdown__list: 10, its column
+   header menu), while staying well below this theme's modal/toolbar layers
+   (1040–1200), so it never covers something it shouldn't. */
+.awesomplete > [role="listbox"] {
+  z-index: 20 !important;
+}
 /* Dropdown menus — z-index above our toolbar (1060) so they're never hidden by it */
 .dropdown-menu,
 .frappe-menu {
