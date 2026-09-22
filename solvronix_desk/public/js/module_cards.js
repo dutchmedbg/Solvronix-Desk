@@ -145,9 +145,9 @@
     var slug  = (frappe.router && frappe.router.slug)
                 ? frappe.router.slug(page.name || "")
                 : (page.name || "").toLowerCase().replace(/ /g, "-");
-    var color = wsColor(title, idx);
-    var icon  = wsIcon(title, page.icon);
-    var desc  = wsDesc(title);
+    var color = wsColor(page.name, idx);
+    var icon  = wsIcon(page.name, page.icon);
+    var desc  = wsDesc(page.name);
 
     return '<a class="st-ws-card" href="/desk/' + encodeURIComponent(slug) + '"' +
            ' data-ws="' + slug + '"' +
