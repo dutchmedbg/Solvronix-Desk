@@ -149,10 +149,47 @@ def get_workspaces():
         if fn is None:
             frappe.log_error("solvronix_desk: no workspace list method found in frappe.desk.desktop")
             return {"pages": [], "private_pages": [], "unavailable": True}
-        return fn()
+        result = fn()
+        return _filter_by_desktop_icon_roles(result)
     except Exception:
         frappe.log_error("solvronix_desk.api.get_workspaces failed")
         return {"pages": [], "private_pages": [], "unavailable": True}
+
+
+def _filter_by_desktop_icon_roles(result):
+    """Core Frappe's workspace list has no role gating of its own — role-based
+    visibility on this site is enforced separately via Desktop Icon.roles (the
+    same mechanism the standard app switcher uses). Apply that same filter
+    here so this grid can't show a user workspaces the switcher hides from them."""
+    if not isinstance(result, dict):
+        return result
+    user_roles = set(frappe.get_roles())
+    if "System Manager" in user_roles:
+        return result
+
+    icon_roles_cache = {}
+
+    def is_allowed(page_name):
+        if page_name not in icon_roles_cache:
+            if frappe.db.exists("Desktop Icon", page_name):
+                icon_roles_cache[page_name] = set(
+                    frappe.get_all(
+                        "Has Role",
+                        filters={"parent": page_name, "parenttype": "Desktop Icon"},
+                        pluck="role",
+                    )
+                )
+            else:
+                icon_roles_cache[page_name] = set()
+        required = icon_roles_cache[page_name]
+        if not required:
+            return True
+        return bool(required & user_roles)
+
+    for key in ("pages", "private_pages"):
+        if key in result and isinstance(result[key], list):
+            result[key] = [p for p in result[key] if is_allowed(p.get("name"))]
+    return result
 
 
 # ── 5. LANGUAGE PREFERENCE ─────────────────────────────────────────────────────
