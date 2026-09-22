@@ -8,49 +8,49 @@
   /* ── Workspace color + icon map ─────────────────────────────── */
   var WS_CONFIG = {
     /* Edvronix */
-    "edvronix app":         { color: "#F97316", icon: "🎓", desc: "Students, fees, exams & attendance" },
-    "edvronix":             { color: "#F97316", icon: "🎓", desc: "Students, fees, exams & attendance" },
-    "education":            { color: "#F97316", icon: "🎓", desc: "Students, fees, exams & attendance" },
+    "edvronix app":         { color: "#F97316", icon: "🎓", desc: "Ученици, такси, изпити и присъствие" },
+    "edvronix":             { color: "#F97316", icon: "🎓", desc: "Ученици, такси, изпити и присъствие" },
+    "education":            { color: "#F97316", icon: "🎓", desc: "Ученици, такси, изпити и присъствие" },
     /* Accounts / Finance */
-    "accounts":             { color: "#F59E0B", icon: "💰", desc: "Invoices, ledger & balance sheets" },
-    "accounting":           { color: "#F59E0B", icon: "💰", desc: "Invoices, ledger & balance sheets" },
-    "finance":              { color: "#F59E0B", icon: "💰", desc: "Invoices, ledger & balance sheets" },
+    "accounts":             { color: "#F59E0B", icon: "💰", desc: "Фактури, дневник и баланси" },
+    "accounting":           { color: "#F59E0B", icon: "💰", desc: "Фактури, дневник и баланси" },
+    "finance":              { color: "#F59E0B", icon: "💰", desc: "Фактури, дневник и баланси" },
     /* Sales / Selling */
-    "selling":              { color: "#EF4444", icon: "📈", desc: "Quotations, orders & customers" },
-    "sales":                { color: "#EF4444", icon: "📈", desc: "Quotations, orders & customers" },
-    "crm":                  { color: "#06B6D4", icon: "🤝", desc: "Leads, deals & opportunities" },
+    "selling":              { color: "#EF4444", icon: "📈", desc: "Оферти, поръчки и клиенти" },
+    "sales":                { color: "#EF4444", icon: "📈", desc: "Оферти, поръчки и клиенти" },
+    "crm":                  { color: "#06B6D4", icon: "🤝", desc: "Потенциални клиенти и сделки" },
     /* Buying / Purchase */
-    "buying":               { color: "#F59E0B", icon: "🛒", desc: "Purchase orders & suppliers" },
-    "purchase":             { color: "#F59E0B", icon: "🛒", desc: "Purchase orders & suppliers" },
+    "buying":               { color: "#F59E0B", icon: "🛒", desc: "Поръчки за покупка и доставчици" },
+    "purchase":             { color: "#F59E0B", icon: "🛒", desc: "Поръчки за покупка и доставчици" },
     /* Stock / Inventory */
-    "stock":                { color: "#3B82F6", icon: "📦", desc: "Warehouses, items & deliveries" },
-    "inventory":            { color: "#3B82F6", icon: "📦", desc: "Warehouses, items & deliveries" },
+    "stock":                { color: "#3B82F6", icon: "📦", desc: "Складове, артикули и доставки" },
+    "inventory":            { color: "#3B82F6", icon: "📦", desc: "Складове, артикули и доставки" },
     /* HR / Payroll */
-    "hr":                   { color: "#8B5CF6", icon: "👥", desc: "Employees, attendance & leave" },
-    "human resources":      { color: "#8B5CF6", icon: "👥", desc: "Employees, attendance & leave" },
-    "payroll":              { color: "#8B5CF6", icon: "💸", desc: "Salary slips & payroll runs" },
+    "hr":                   { color: "#8B5CF6", icon: "👥", desc: "Служители, присъствие и отпуски" },
+    "human resources":      { color: "#8B5CF6", icon: "👥", desc: "Служители, присъствие и отпуски" },
+    "payroll":              { color: "#8B5CF6", icon: "💸", desc: "Фишове за заплати" },
     /* Manufacturing */
-    "manufacturing":        { color: "#10B981", icon: "🏭", desc: "Work orders & production planning" },
+    "manufacturing":        { color: "#10B981", icon: "🏭", desc: "Работни поръчки и планиране на производство" },
     /* Projects */
-    "projects":             { color: "#3B82F6", icon: "📋", desc: "Tasks, timesheets & milestones" },
+    "projects":             { color: "#3B82F6", icon: "📋", desc: "Задачи, отчети и етапи" },
     /* Quality */
-    "quality":              { color: "#06B6D4", icon: "✅", desc: "Quality inspections & feedback" },
+    "quality":              { color: "#06B6D4", icon: "✅", desc: "Инспекции на качеството" },
     /* Support */
-    "support":              { color: "#06B6D4", icon: "🎧", desc: "Issues, SLA & customer portal" },
+    "support":              { color: "#06B6D4", icon: "🎧", desc: "Заявки, SLA и клиентски портал" },
     /* Assets */
-    "assets":               { color: "#10B981", icon: "🏗️", desc: "Fixed assets & depreciation" },
+    "assets":               { color: "#10B981", icon: "🏗️", desc: "Дълготрайни активи и амортизация" },
     /* Loans */
-    "loans":                { color: "#F59E0B", icon: "🏦", desc: "Loan management & repayments" },
+    "loans":                { color: "#F59E0B", icon: "🏦", desc: "Управление на заеми" },
     /* Healthcare */
-    "healthcare":           { color: "#EF4444", icon: "🏥", desc: "Patients, appointments & billing" },
+    "healthcare":           { color: "#EF4444", icon: "🏥", desc: "Пациенти, часове и фактуриране" },
     /* Website */
-    "website":              { color: "#F97316", icon: "🌐", desc: "Web pages, blog & store" },
+    "website":              { color: "#F97316", icon: "🌐", desc: "Уеб страници, блог и магазин" },
     /* Settings */
-    "settings":             { color: "#6B7280", icon: "⚙️",  desc: "System configuration & setup" },
+    "settings":             { color: "#6B7280", icon: "⚙️",  desc: "Системна конфигурация" },
     /* Solvronix */
-    "solvronix":            { color: "#F97316", icon: "🔷", desc: "Solvronix platform settings" },
+    "solvronix":            { color: "#F97316", icon: "🔷", desc: "Настройки на платформата Solvronix" },
     /* Home — not shown in the grid itself */
-    "home":                 { color: "#6B7280", icon: "🏠", desc: "Home" },
+    "home":                 { color: "#6B7280", icon: "🏠", desc: "Начало" },
   };
 
   /* Fallback colors cycling for unknown workspaces */
@@ -130,8 +130,8 @@
       html += '<div class="st-ws-card st-skeleton">' +
               '<div class="st-ws-card-icon"></div>' +
               '<div class="st-ws-card-info">' +
-              '<div class="st-ws-card-name">Loading</div>' +
-              '<div class="st-ws-card-desc">Please wait</div>' +
+              '<div class="st-ws-card-name">Зареждане</div>' +
+              '<div class="st-ws-card-desc">Моля, изчакай</div>' +
               '</div></div>';
     }
     html += '</div>';
@@ -140,7 +140,7 @@
 
   /* ── Render one card ─────────────────────────────────────────── */
   function buildCard(page, idx) {
-    var title = page.title || page.name || "Module";
+    var title = page.title || page.name || "Модул";
     /* Use the Frappe workspace slug (lowercase, spaces → hyphens) for navigation */
     var slug  = (frappe.router && frappe.router.slug)
                 ? frappe.router.slug(page.name || "")
@@ -230,11 +230,11 @@
     /* Grid shell with skeleton loaders */
     grid.innerHTML =
       '<div class="st-ws-header">' +
-      '<div class="st-ws-title">All Apps</div>' +
-      '<div class="st-ws-subtitle">Jump to any workspace from here</div>' +
+      '<div class="st-ws-title">Всички приложения</div>' +
+      '<div class="st-ws-subtitle">Скочи до работна зона оттук</div>' +
       '</div>' +
       '<div class="st-ws-search-wrap">' +
-      '<input id="st-ws-search-input" class="st-ws-search" type="text" placeholder="Search apps…" autocomplete="off">' +
+      '<input id="st-ws-search-input" class="st-ws-search" type="text" placeholder="Търсене на приложения…" autocomplete="off">' +
       '</div>' +
       buildSkeletons(8);
 
@@ -261,7 +261,7 @@
 
       if (!pages.length) {
         grid.insertAdjacentHTML("beforeend",
-          '<div class="st-ws-cards"><div class="st-ws-empty">No workspaces found.</div></div>');
+          '<div class="st-ws-cards"><div class="st-ws-empty">Няма намерени работни зони.</div></div>');
         return;
       }
 
@@ -269,7 +269,7 @@
       for (var i = 0; i < pages.length; i++) {
         html += buildCard(pages[i], i);
       }
-      html += '<div id="st-ws-empty" class="st-ws-empty" style="display:none">No apps match your search.</div>';
+      html += '<div id="st-ws-empty" class="st-ws-empty" style="display:none">Няма приложения, отговарящи на търсенето.</div>';
       html += '</div>';
       grid.insertAdjacentHTML("beforeend", html);
 
