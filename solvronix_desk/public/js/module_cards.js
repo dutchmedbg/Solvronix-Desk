@@ -49,6 +49,12 @@
     "settings":             { color: "#6B7280", icon: "⚙️",  desc: "Системна конфигурация" },
     /* Solvronix */
     "solvronix":            { color: "#F97316", icon: "🔷", desc: "Настройки на платформата Solvronix" },
+    /* Leaves */
+    "leaves":               { color: "#14B8A6", icon: "🏖️", desc: "Отпуски и обезщетения" },
+    /* Expenses */
+    "expenses":             { color: "#F59E0B", icon: "🧾", desc: "Отчети за разходи" },
+    /* Business Trip */
+    "business trip":        { color: "#EC4899", icon: "🧳", desc: "Заповеди за командировка" },
     /* Home — not shown in the grid itself */
     "home":                 { color: "#6B7280", icon: "🏠", desc: "Начало" },
   };
